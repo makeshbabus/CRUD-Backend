@@ -1,0 +1,21 @@
+go to path mongodb/bin 
+mongodump --port 27017 --db test
+
+
+mkdir node-demo
+cd node-demo
+npm init
+touch app.js
+npm install express --save
+touch index.html
+npm install mongoose --save
+npm install body-parser --save
+node app.js
+
+Html file append instead of get
+app.use("/", (req, res) => {
+ res.sendFile(__dirname + "/index.html");
+});
+
+link:
+https://codeburst.io/hitchhikers-guide-to-back-end-development-with-examples-3f97c70e0073
